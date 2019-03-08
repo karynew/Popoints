@@ -1,0 +1,800 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+body {
+  font: 100% Helvetica, sans-serif;
+  font-size: 50px; }
+
+* {
+  box-sizing: border-box; }
+
+/*header.scss*/
+body {
+  font-family: 'Open Sans', sans-serif; }
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto; }
+
+body {
+  display: block;
+  background-size: cover;
+  width: 100%;
+  height: 100%; }
+
+.slide1, .slide2, .slide3 {
+  width: 100%;
+  height: auto; }
+  @media (min-width: 520px) {
+    .slide1, .slide2, .slide3 {
+      width: 100%;
+      height: auto; } }
+  @media (min-width: 768px) {
+    .slide1, .slide2, .slide3 {
+      height: auto;
+      width: 100%; } }
+  @media (min-width: 992px) {
+    .slide1, .slide2, .slide3 {
+      width: 100%;
+      height: 100%; } }
+
+.require {
+  padding: 5% auto; }
+
+.img-responsive {
+  max-width: 100%; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }
+
+.space {
+  margin-bottom: 5px; }
+
+.slideSim {
+  background: url(https://img03.en25.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7B94233c57-b5fb-427b-b05f-71759ab5c9db%7D_bg-LandingSimultanea.tiny.jpg) no-repeat;
+  background-size: cover;
+  display: block;
+  background-position: 50% 100%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/*cards*/
+.brand {
+  margin: 0 auto;
+  position: absolute;
+  z-index: 99;
+  left: 45%;
+  /* top: 0; */
+  -ms-transform: translate(0%, 50%);
+  /* -webkit-transform: translate(0%, 50%); */
+  /* transform: translate(0%, 50%); */
+  width: 300px; }
+  .brand img {
+    width: 100%; }
+
+.legal {
+  position: absolute;
+  z-index: 80;
+  right: 0;
+  top: 200; }
+
+.vigilado {
+  position: absolute;
+  z-index: 80;
+  left: 0;
+  bottom: -1000; }
+  @media (min-width: 1920px) {
+    .vigilado {
+      bottom: -5000; } }
+
+.home {
+  margin-top: 30%; }
+  @media (min-width: 520px) {
+    .home {
+      margin-top: 30%; } }
+  @media (min-width: 768px) {
+    .home {
+      margin-top: 5%; } }
+  @media (min-width: 1024px) {
+    .home {
+      margin-top: 5%; } }
+  @media (min-width: 992px) {
+    .home {
+      margin-top: 5%; } }
+  @media (min-width: 1200px) {
+    .home {
+      margin-top: 5%; } }
+  @media (min-width: 1280px) {
+    .home {
+      margin-top: 15%; } }
+  @media (min-width: 1366px) {
+    .home {
+      margin-top: 15%; } }
+  @media (min-width: 1440px) {
+    .home {
+      margin-top: 15%; } }
+  @media (min-width: 1920px) {
+    .home {
+      margin-top: 15%; } }
+
+.b-a {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95); }
+
+.bar {
+  transition: all .25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 6px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.95); }
+  .bar:before, .bar:after {
+    transition: all .25s;
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 6px;
+    width: 30px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.95); }
+
+.menu-collapsed {
+  transition: all .25s;
+  position: fixed;
+  top: 10px;
+  left: 9px;
+  height: 36px;
+  width: 36px;
+  z-index: 1;
+  cursor: pointer; }
+  @media (min-width: 992px) {
+    .menu-collapsed {
+      display: none; } }
+  .menu-collapsed ul {
+    transition: all 0s;
+    position: fixed;
+    left: -9000px; }
+
+.bar {
+  position: fixed;
+  left: 12px;
+  top: 24px;
+  z-index: 20; }
+  .bar:before {
+    top: -8px; }
+  .bar:after {
+    top: 8px; }
+
+.b-a-expanded {
+  transition: all .25s;
+  top: -0px; }
+
+.menu-expanded {
+  transition: all .25s;
+  text-align: center;
+  line-height: 200px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px;
+  top: 0;
+  left: 0;
+  background-color: rgba(25, 75, 56, 0.9); }
+  .menu-expanded .bar:before, .menu-expanded .bar:after {
+    transition: all .25s;
+    top: -0px; }
+  .menu-expanded ul {
+    transition: all 0s;
+    position: relative;
+    left: 0;
+    z-index: 2;
+    padding: 0px;
+    margin-top: 10%; }
+  .menu-expanded li {
+    list-style: none; }
+  .menu-expanded a {
+    transition: all .15s;
+    text-decoration: none;
+    font-size: 0.5em;
+    padding: 5px;
+    color: #fff;
+    display: block;
+    line-height: 4rem; }
+    .menu-expanded a:hover {
+      background-color: rgba(255, 255, 255, 0.8);
+      transition: all .15s;
+      letter-spacing: 2px;
+      color: #333;
+      border: 1px solid rgba(255, 255, 255, 0.15); }
+  .menu-expanded .bar {
+    background-color: transparent;
+    transition: all .25s; }
+    .menu-expanded .bar:before {
+      transform: rotate(45deg); }
+    .menu-expanded .bar:after {
+      transform: rotate(-45deg); }
+
+.loginBar {
+  background-color: #00A587;
+  height: auto;
+  color: #ffffff;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+
+.menu {
+  padding-left: 5%;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  flex-basis: 100%; }
+  @media (min-width: 520px) {
+    .menu {
+      justify-content: center; } }
+  .menu__brand {
+    flex: 2;
+    width: 274px;
+    margin-left: 50px; }
+    @media (min-width: 520px) {
+      .menu__brand {
+        width: 274px;
+        justify-content: center;
+        display: flex;
+        margin-left: 0px; } }
+    .menu__brand img {
+      width: 200px;
+      height: 55px;
+      min-width: 180px; }
+      @media (min-width: 992px) {
+        .menu__brand img {
+          width: 100%;
+          min-width: 226px;
+          height: 64px; } }
+  .menu__list {
+    display: none; }
+    @media (min-width: 992px) {
+      .menu__list {
+        display: flex;
+        flex: 7; } }
+    .menu__list ul {
+      color: white;
+      list-style: none;
+      width: 100%; }
+      .menu__list ul li {
+        font-size: 0.7rem;
+        display: inline; }
+        @media (min-width: 992px) {
+          .menu__list ul li {
+            font-size: 0.7rem; } }
+        @media (min-width: 1024px) {
+          .menu__list ul li {
+            font-size: 0.8rem; } }
+        .menu__list ul li a {
+          color: white; }
+          .menu__list ul li a:active {
+            background: #F5576c;
+            color: #fff;
+            padding: 10px;
+            border-radius: 20px; }
+  .menu .active {
+    background: #F5576c;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0px;
+    margin-top: 10%; }
+    @media (min-width: 992px) {
+      .menu .active {
+        border-radius: 20px; } }
+  .menu__login {
+    display: none; }
+    @media (min-width: 992px) {
+      .menu__login {
+        display: block;
+        flex: 3; } }
+    .menu__login p {
+      color: #ffffff;
+      font-size: 0.8rem;
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom: 0px; }
+
+.slide1 {
+  display: flex;
+  align-items: center;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+  background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), #139980;
+  /* Old browsers */
+  background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%);
+  /* FF3.6-15 */
+  background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), -webkit-linear-gradient(45deg, #139980 0%, #4fd194 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), linear-gradient(45deg, #139980 0%, #4fd194 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 );
+  /* IE6-9 fallback on horizontal gradient */
+  background-repeat: no-repeat;
+  background-position: 0% 50px;
+  background-size: cover;
+  height: 100%; }
+  .slide1__content {
+    width: 100%;
+    color: #ffffff;
+    margin-top: 100px; }
+    @media (min-width: 520px) {
+      .slide1__content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px; } }
+    @media (min-width: 992px) {
+      .slide1__content {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin-top: 40px; } }
+    .slide1__content__text {
+      padding-left: 5%;
+      width: 100%;
+      margin-top: 10%; }
+      @media (min-width: 520px) {
+        .slide1__content__text {
+          width: 50%;
+          margin-top: 0%; } }
+      @media (min-width: 992px) {
+        .slide1__content__text {
+          width: 50%;
+          justify-content: center; } }
+      .slide1__content__text h1 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 2rem; }
+        @media (min-width: 992px) {
+          .slide1__content__text h1 {
+            font-size: 2.5rem;
+            font-weight: bolder;
+            line-height: 3rem; } }
+      .slide1__content__text p {
+        font-size: 0.9rem; }
+        @media (min-width: 992px) {
+          .slide1__content__text p {
+            font-size: 1.2rem; } }
+      .slide1__content__text h2 {
+        font-size: 2.0rem;
+        font-weight: bolder;
+        line-height: 2rem; }
+      .slide1__content__text span {
+        text-align: center;
+        font-size: 1.5rem;
+        width: 100%; }
+      .slide1__content__text .btn-stores {
+        width: 100%;
+        display: flex;
+        margin-top: 20px; }
+        @media (min-width: 992px) {
+          .slide1__content__text .btn-stores {
+            width: 55%; } }
+        .slide1__content__text .btn-stores .app-store {
+          width: 50%; }
+          .slide1__content__text .btn-stores .app-store img {
+            width: 95%;
+            margin: 0 auto; }
+        .slide1__content__text .btn-stores .google-play {
+          width: 50%; }
+          .slide1__content__text .btn-stores .google-play img {
+            width: 95%;
+            margin: 0 auto; }
+    .slide1__content__img {
+      width: 100%;
+      position: relative; }
+      @media (min-width: 520px) {
+        .slide1__content__img {
+          width: 50%; } }
+      @media (min-width: 992px) {
+        .slide1__content__img {
+          width: 50%;
+          display: block; } }
+      .slide1__content__img__phone img {
+        width: 50%; }
+        @media (min-width: 400px) {
+          .slide1__content__img__phone img {
+            width: 50%; } }
+        @media (min-width: 520px) {
+          .slide1__content__img__phone img {
+            width: 50%; } }
+        @media (min-width: 992px) {
+          .slide1__content__img__phone img {
+            width: 50%; } }
+      .slide1__content__img__dog {
+        position: absolute;
+        right: 0;
+        bottom: -10; }
+        @media (min-width: 992px) {
+          .slide1__content__img__dog {
+            right: 0; } }
+        .slide1__content__img__dog img {
+          width: 250px;
+          min-width: 250px; }
+          @media (min-width: 520px) {
+            .slide1__content__img__dog img {
+              width: 250px; } }
+          @media (min-width: 992px) {
+            .slide1__content__img__dog img {
+              width: 70%; } }
+
+.slide2 {
+  padding: 20px; }
+  .slide2 h2 {
+    font-size: 1rem;
+    color: #194b38;
+    text-align: center;
+    font-weight: bolder;
+    padding: 20px;
+    margin-top: 10%; }
+    @media (min-width: 992px) {
+      .slide2 h2 {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        padding: 0px; } }
+  .slide2__container {
+    width: 100%;
+    display: block;
+    justify-content: center;
+    align-items: center; }
+    @media (min-width: 520px) {
+      .slide2__container {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    @media (min-width: 768px) {
+      .slide2__container {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    @media (min-width: 992px) {
+      .slide2__container {
+        display: flex;
+        justify-content: center;
+        align-items: center; } }
+    .slide2__container__mobile {
+      display: flex;
+      justify-content: center; }
+      .slide2__container__mobile img {
+        width: 200px;
+        height: 395px; }
+        @media (min-width: 992px) {
+          .slide2__container__mobile img {
+            width: 264px;
+            height: 501px; } }
+    .slide2__container .left {
+      text-align: right;
+      padding-right: 20px; }
+    .slide2__container .right {
+      text-align: left;
+      padding-left: 20px; }
+    .slide2__container__mobileSteps {
+      width: 100%; }
+      @media (min-width: 768px) {
+        .slide2__container__mobileSteps {
+          display: none; } }
+      @media (min-width: 992px) {
+        .slide2__container__mobileSteps {
+          display: none; } }
+      .slide2__container__mobileSteps__item {
+        width: 100%;
+        text-align: center; }
+        .slide2__container__mobileSteps__item img {
+          width: 45px;
+          height: 45px; }
+        .slide2__container__mobileSteps__item h3 {
+          font-size: 1rem;
+          font-weight: bolder; }
+        .slide2__container__mobileSteps__item p {
+          font-size: 0.9rem; }
+    .slide2__container__steps {
+      color: #194b38;
+      display: none; }
+      @media (min-width: 400px) {
+        .slide2__container__steps {
+          display: none; } }
+      @media (min-width: 520px) {
+        .slide2__container__steps {
+          display: none; } }
+      @media (min-width: 768px) {
+        .slide2__container__steps {
+          display: block; } }
+      @media (min-width: 992px) {
+        .slide2__container__steps {
+          display: block; } }
+      .slide2__container__steps__item img {
+        width: 45%; }
+      .slide2__container__steps__item h3 {
+        font-size: 1rem;
+        font-weight: bolder; }
+      .slide2__container__steps__item p {
+        font-size: 0.9rem; }
+
+.slide3 {
+  width: 100%;
+  display: grid;
+  background: #F5576c;
+  color: white; }
+  @media (min-width: 992px) {
+    .slide3 {
+      display: flex; } }
+  .slide3__description {
+    width: 100%;
+    background: url("https://img03.en25.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdca00b68-2e01-421c-893d-61a581e670c2%7D_slide3_02.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: auto;
+    min-height: 500px; }
+    @media (min-width: 520px) {
+      .slide3__description {
+        height: auto;
+        min-height: 800px; } }
+    @media (min-width: 992px) {
+      .slide3__description {
+        width: 50%; } }
+    .slide3__description__text {
+      margin-top: 12%;
+      width: 100%;
+      padding-left: 5%; }
+      @media (min-width: 992px) {
+        .slide3__description__text {
+          width: 70%; } }
+      .slide3__description__text h2 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+        line-height: 3rem;
+        padding-left: 5%; }
+        @media (min-width: 992px) {
+          .slide3__description__text h2 {
+            font-size: 2.5rem; } }
+      .slide3__description__text p {
+        font-size: 0.9rem;
+        padding-left: 5%;
+        word-wrap: break-word; }
+        @media (min-width: 992px) {
+          .slide3__description__text p {
+            font-size: 1.2rem;
+            word-wrap: break-word; } }
+  .slide3__image {
+    display: block; }
+    @media (min-width: 520px) {
+      .slide3__image {
+        height: auto; } }
+    @media (min-width: 768px) {
+      .slide3__image {
+        height: auto; } }
+    @media (min-width: 992px) {
+      .slide3__image {
+        width: 50%;
+        background-size: cover;
+        display: inline;
+        justify-content: center; } }
+    .slide3__image__icon {
+      margin-top: 5%;
+      display: flex; }
+      .slide3__image__icon img {
+        width: 100px;
+        margin: 0 auto;
+        height: 100px; }
+    .slide3__image__testimony {
+      width: 100%;
+      font-family: 'Open Sans', sans-serif; }
+      .slide3__image__testimony h2 {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem; }
+      .slide3__image__testimony__item {
+        background: #ffffff;
+        display: flex;
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+        margin: 10px auto;
+        justify-content: center;
+        border-radius: 10px;
+        align-items: center;
+        -webkit-box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46);
+        -moz-box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46);
+        box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46); }
+        @media (min-width: 992px) {
+          .slide3__image__testimony__item {
+            width: 80%; } }
+        .slide3__image__testimony__item__avatar {
+          border-radius: 50%;
+          overflow: hidden;
+          width: 100px;
+          margin-right: 10px;
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#139980+0,4fd194+100 */
+          background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), #139980;
+          /* Old browsers */
+          background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), -moz-linear-gradient(45deg, #139980 0%, #4fd194 100%);
+          /* FF3.6-15 */
+          background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), -webkit-linear-gradient(45deg, #139980 0%, #4fd194 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: url("http://images.publicidad.davivienda.com/EloquaImages/clients/BANCODAVIVIENDADAVIPRO/%7Bdcc56003-71fe-4779-8b87-a429700967de%7D_mountain1.png"), linear-gradient(45deg, #139980 0%, #4fd194 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#139980', endColorstr='#4fd194',GradientType=1 );
+          /* IE6-9 fallback on horizontal gradient */ }
+          .slide3__image__testimony__item__avatar__picture {
+            margin: 8px;
+            border-radius: 50%;
+            overflow: hidden; }
+            .slide3__image__testimony__item__avatar__picture img {
+              width: 100%; }
+        .slide3__image__testimony__item__text {
+          width: 50%; }
+          .slide3__image__testimony__item__text p {
+            color: #194b38;
+            font-size: 0.9rem; }
+
+.slide4 {
+  width: 100%;
+  height: auto; }
+  .slide4 .video {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
+    .slide4 .video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.slide5 {
+  padding: 0px;
+  color: #ffffff;
+  display: block;
+  align-items: center;
+  background-color: #00A587;
+  height: auto; }
+  @media (min-width: 992px) {
+    .slide5 {
+      color: #ffffff;
+      background-color: #00A587;
+      height: auto;
+      flex-basis: 100%; } }
+  .slide5__group {
+    background: #009081;
+    padding: 30px; }
+    .slide5__group img {
+      width: 80px;
+      margin: 0 auto;
+      display: block; }
+    .slide5__group h3 {
+      color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      font-weight: bolder; }
+  .slide5__tittle {
+    background: #F5576c; }
+    .slide5__tittle h3 {
+      color: #ffffff;
+      text-align: center;
+      padding: 10px; }
+  .slide5__team {
+    display: block;
+    margin: 40px auto; }
+    @media (min-width: 992px) {
+      .slide5__team {
+        display: flex;
+        margin: 40px auto; } }
+    .slide5__team__creators {
+      padding: 10px;
+      background: #ffffff;
+      display: block;
+      width: 90%;
+      margin: 0 auto;
+      padding: 20px;
+      margin: 10px auto;
+      justify-content: center;
+      border-radius: 10px;
+      align-items: center;
+      -webkit-box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46);
+      -moz-box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46);
+      box-shadow: 3px 1px 26px -1px rgba(0, 0, 0, 0.46); }
+      @media (min-width: 992px) {
+        .slide5__team__creators {
+          display: inline-block;
+          width: 30%;
+          padding: 20px; } }
+      .slide5__team__creators__t h3 {
+        font-size: 1.2rem;
+        color: #057674;
+        text-align: justify;
+        font-weight: bolder;
+        text-align: center;
+        padding: 5px; }
+      .slide5__team__creators__t p {
+        font-size: 0.9rem;
+        color: #194b38;
+        text-align: justify; }
+      .slide5__team__creators__profile {
+        border-radius: 50%;
+        height: 100px;
+        overflow: hidden;
+        width: 100px;
+        margin-right: 10px;
+        background: #F5576c;
+        margin: 0 auto; }
+        .slide5__team__creators__profile__picture {
+          margin: 8px;
+          border-radius: 50%;
+          overflow: hidden; }
+          .slide5__team__creators__profile__picture img {
+            width: 100%; }
+  .slide5__footer {
+    width: 100%;
+    background: #009081;
+    display: block;
+    align-items: center;
+    flex-basis: 100%; }
+    @media (min-width: 992px) {
+      .slide5__footer {
+        display: flex; } }
+    .slide5__footer__brand {
+      flex: 3;
+      padding: 1%;
+      display: flex;
+      justify-content: center; }
+      @media (min-width: 992px) {
+        .slide5__footer__brand {
+          flex: 3;
+          padding-left: 5%;
+          display: flex;
+          justify-content: center; } }
+      .slide5__footer__brand img {
+        width: 180px;
+        height: 48px; }
+    .slide5__footer p {
+      flex: 6;
+      font-size: 0.7rem;
+      margin-bottom: 0px;
+      text-align: center; }
+    .slide5__footer__network {
+      flex: 3; }
+      .slide5__footer__network ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+        margin: 10px auto 10px auto; }
+        @media (min-width: 992px) {
+          .slide5__footer__network ul {
+            list-style: none;
+            display: flex;
+            justify-content: center; } }
+        .slide5__footer__network ul li {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          overflow: hidden;
+          margin-right: 5px; }
+          .slide5__footer__network ul li img {
+            position: relative;
+            top: 25%;
+            left: 25%;
+            width: 25px;
+            height: 25px; }
